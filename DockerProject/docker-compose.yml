@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dockerproject:
+    #image: selvamlio/dockerproject
+    build: .      
+    ports:
+      - "9089:80"
+  redislio:
+    image: "redis"    
+    ports: 
+      - "6379:6379"
